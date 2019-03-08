@@ -2,7 +2,7 @@ class I386JosElfQemu < Formula
 
   desc "x86 Emulator"
   homepage "http://wiki.qemu.org"
-  head "https://github.com/xiw/qemu.git", :branch => "6.828-2.3.0"
+  head "https://github.com/mit-pdos/6.828-qemu.git", :branch => "master"
   conflicts_with "qemu"
 
   depends_on "pkg-config" => :build
