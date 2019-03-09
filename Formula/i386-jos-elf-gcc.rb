@@ -2,9 +2,9 @@ class I386JosElfGcc < Formula
 
   desc "GNU compiler collection for i386-elf development"
   homepage "https://gcc.gnu.org"
-  url "https://ftpmirror.gnu.org/gcc/gcc-6.2.0/gcc-6.2.0.tar.bz2"
-  mirror "https://ftp.gnu.org/gnu/gcc/gcc-6.2.0/gcc-6.2.0.tar.bz2"
-  sha256 "9944589fc722d3e66308c0ce5257788ebd7872982a718aa2516123940671b7c5"
+  url "https://ftp.gnu.org/gnu/gcc/gcc-8.3.0/gcc-8.3.0.tar.xz"
+  mirror "https://ftpmirror.gnu.org/gcc/gcc-8.3.0/gcc-8.3.0.tar.xz"
+  sha256 "64baadfe6cc0f4947a84cb12d7f0dfaf45bb58b7e92461639596c21e02d97d2c"
 
   depends_on "gmp"
   depends_on "libmpc"
@@ -39,6 +39,8 @@ class I386JosElfGcc < Formula
       system "make", "install-target-libgcc"
     end
 
+    # info and man7 files conflict with native gcc
     info.rmtree
+    man7.rmtree
   end
 end
