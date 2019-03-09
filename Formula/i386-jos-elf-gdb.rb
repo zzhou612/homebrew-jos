@@ -1,9 +1,10 @@
 class I386JosElfGdb < Formula
 
+  desc "GNU debugger"
   homepage "https://www.gnu.org/software/gdb/"
-  url "http://ftpmirror.gnu.org/gdb/gdb-7.9.1.tar.xz"
-  mirror "https://ftp.gnu.org/gnu/gdb/gdb-7.9.1.tar.xz"
-  sha256 "cd9c543a411a05b2b647dd38936034b68c2b5d6f10e0d51dc168c166c973ba40"
+  url "http://ftpmirror.gnu.org/gdb/gdb-8.2.1.tar.xz"
+  mirror "https://ftp.gnu.org/gnu/gdb/gdb-8.2.1.tar.xz"
+  sha256 "0a6a432907a03c5c8eaad3c3cffd50c00a40c3a5e3c4039440624bae703f2202"
 
   def install
     args = %W[
